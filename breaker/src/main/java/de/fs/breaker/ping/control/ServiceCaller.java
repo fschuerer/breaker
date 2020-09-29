@@ -5,15 +5,13 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.inject.Singleton;
 import javax.ws.rs.client.Client;
 import static javax.ws.rs.client.ClientBuilder.newBuilder;
 import javax.ws.rs.core.Response;
 import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
 
-@Singleton
 public class ServiceCaller {
-
+    
     Client client;
     URI backendURI;
 

@@ -1,0 +1,37 @@
+### .gitignore template composed from 
+### - https://gist.github.com/lordofthelake/5833336
+### - https://gist.github.com/chhh/4961200
+
+# Eclipse
+.classpath
+.project
+.settings/
+ 
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+ 
+# Maven
+log/
+target/
+
+ # Mac
+.DS_Store
+
+
+
+### Archetype specific parts
+
+env/*.properties
+!env/template.properties
+/deploy-local.cmd
